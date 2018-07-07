@@ -5,6 +5,7 @@ We will use {{ }} ng expression or string interpolation syntax to display the fi
 
 app.component.ts
 ---
+```typescript
 import { Component } from '@angular/core';
 
 @Component({
@@ -25,10 +26,10 @@ export class AppComponent {
 	paymentMode: Array<String> = ["Cash","Netbanking","Draft","Bank Transfer"];
 	level: number = 1;   // 1 for expert
 }  
-
+```
 app.component.html
 ---
-
+```html
 <div class="container">
   <h1 class="text-center border-bottom">{{ title }}</h1>
   <div class="row">
@@ -60,4 +61,4 @@ app.component.html
     </div>
   </div>
 </div>
-
+```
